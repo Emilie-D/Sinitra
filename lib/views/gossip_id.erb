@@ -1,0 +1,8 @@
+<p> Voici le gossip <%= @id %></p>
+
+<p> Author : <%= Gossip.find(id)[0] %><br /> 
+	Content : <%=Gossip.find(id)[1]%>
+</p>
+
+<p> Lien pour modifier le potin <a href="/gossip/:id/edit/">Accueil</a> </p>
+<p> Lien pour revenir à la page des potins <a href="/">Accueil</a> </p>
